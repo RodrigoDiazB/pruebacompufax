@@ -1,3 +1,4 @@
+/**Archivo para confiurar el puerto y verificar que el servidor está corriendo */
 const app = require('./app');
 
 const PORT = 3000;

@@ -10,12 +10,12 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// Rutas
+// Se especifican las rutas
 app.use('/clientes', clientesRoutes);
 app.use('/direcciones', direccionesRoutes);
 app.use('/ordenes', ordenesRoutes);
 
-// Sincronización con la base de datos
+// Se monitorea la sincronización con MySQL
 sequelize.sync().then(() => console.log('Base de datos sincronizada'));
 
 module.exports = app;
