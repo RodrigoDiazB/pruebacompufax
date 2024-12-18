@@ -1,3 +1,4 @@
+/**Archivo para especificar las tablas y las relaciones entre ellas mediante Sequelize */
 const sequelize = require('../config/db');
 const Cliente = require('./cliente');
 const Direccion = require('./direccion');

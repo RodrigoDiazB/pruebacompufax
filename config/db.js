@@ -1,9 +1,10 @@
+/**Archivo para configuración de base de datos mediante Sequelize */
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize('pruebacompufax', 'root', 'root', {
-  host: 'localhost',
+  host: 'localhost', 
   dialect: 'mysql',
-  logging: false, // Desactiva los logs de SQL
+  logging: false, 
 });
 
 module.exports = sequelize;
